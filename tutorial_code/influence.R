@@ -1,7 +1,7 @@
 # R Code: Load data
 library(tidyverse)
-edge = read_csv("edge_influence.csv")
-node = read_csv("node_influence.csv")
+edge = read_csv("../data/edge_influence.csv")
+node = read_csv("../data/node_influence.csv")
 
 full_data = left_join(edge,node, by = "rater_ID")
 
