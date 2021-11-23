@@ -3,8 +3,8 @@ library(tidyverse)
 library(igraph)
 library(amen)
 
-edge = read_csv("edge_selection.csv")
-node = read_csv("node_selection.csv")
+edge = read_csv("../data/edge_selection.csv")
+node = read_csv("../data/node_selection.csv")
 
 # R Code: Calculate adjacently matrix and relational covariates 
 G = graph.data.frame(edge) 
